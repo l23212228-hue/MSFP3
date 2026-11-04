@@ -1,6 +1,3 @@
-Aquí tienes el archivo **`README.md`** completo, limpio y actualizado con la bibliografía de 7 referencias formateada correctamente, listo para copiar y pegar directamente en GitHub:
-
-```markdown
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=l23212228-hue/MSFP3)
 
 # Práctica 3 — Modelado y control del sistema musculoesquelético
