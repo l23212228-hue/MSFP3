@@ -1,6 +1,6 @@
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=DrPaulValle/MSFBP0)
 
-# Práctica 3 — Modelado y control del sistema musculoesquelético
+# Práctica 3: Modelado y control del sistema musculoesquelético
 
 Repositorio académico de la asignatura **Modelado de Sistemas Fisiológicos**, correspondiente al programa de **Ingeniería Biomédica** del Tecnológico Nacional de México / Instituto Tecnológico de Tijuana. Esta práctica integra el modelado matemático de las propiedades viscoelásticas del sistema musculoesquelético, la conversión mediante analogías electromecánicas (fuerza-voltaje), el análisis temporal, la simulación *in silico* y el diseño de un controlador PID para compensar un caso simulado de atrofia muscular.
 
@@ -12,7 +12,7 @@ El caso de estudio contrasta la respuesta mecánica de un **individuo sano (cont
 **Institución:** Tecnológico Nacional de México / Instituto Tecnológico de Tijuana  
 **Asignatura:** Modelado de Sistemas Fisiológicos  
 **Programa:** Ingeniería Biomédica  
-**Estudiante:** Nombre completo · Número de control · correo@tijuana.tecnm.mx
+**Estudiante:** Reyes Zamudio Mariant · 23212228 · l23212228@tijuana.tecnm.mx
 
 **Repositorio de la asignatura:** https://github.com/DrPaulValle/MSF-IBF1020  
 **Sede:** Blvd. Alberto Limón Padilla s/n, Tijuana, C. P. 22454, B. C., México.
