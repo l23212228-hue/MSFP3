@@ -1,20 +1,22 @@
+Aquí tienes el archivo **`README.md`** completo, limpio y actualizado con la bibliografía de 7 referencias formateada correctamente, listo para copiar y pegar directamente en GitHub:
+
+```markdown
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=l23212228-hue/MSFP3)
 
-# Práctica 3: Modelado y control del sistema musculoesquelético
+# Práctica 3 — Modelado y control del sistema musculoesquelético
 
 Repositorio académico de la asignatura **Modelado de Sistemas Fisiológicos**, correspondiente al programa de **Ingeniería Biomédica** del Tecnológico Nacional de México / Instituto Tecnológico de Tijuana. En esta práctica se modela un compartimento musculoesquelético simplificado, se construye su circuito eléctrico equivalente mediante la analogía fuerza-voltaje, se obtiene su función de transferencia por el principio de superposición, y se evalúa la respuesta de un individuo sano (*control*) frente a un caso simulado de atrofia muscular (*caso*), diseñando una estrategia de control *in silico* mediante un controlador PID.
 
-
 **Docente:** Dr. Paul Antonio Valle Trujillo  
 **Correo:** paul.valle@tectijuana.edu.mx  
-**Departamento:** Ingeniería Eléctrica y Electrónica  
+**Departamento:** Departamento de Ingeniería Eléctrica y Electrónica  
 **Institución:** Tecnológico Nacional de México / Instituto Tecnológico de Tijuana  
 **Asignatura:** Modelado de Sistemas Fisiológicos  
 **Programa:** Ingeniería Biomédica  
-**Estudiante:** Nombre completo · Número de control · correo@tijuana.tecnm.mx
+**Estudiante:** Reyes Zamudio Mariant · 23212228 · l23212228@tectijuana.edu.mx  
 
-**Repositorio de la asignatura:** https://github.com/DrPaulValle/MSF-IBF1020  
 **Sede:** Blvd. Alberto Limón Padilla s/n, Tijuana, C. P. 22454, B. C., México.
+
 ---
 
 <a id="contenido"></a>
@@ -216,13 +218,23 @@ Para compensar la respuesta alterada por la atrofia muscular, se implementa un s
 
 $$\text{Error: } e(t) = x_{\text{control}}(t) - x_{\text{caso}}(t)$$
 
-+---+     +-----+     +---------+
+
+```
+
+```
+           +---+     +-----+     +---------+
+
+```
+
 V_e(t) ----> | + | --> | PID | --> | Paciente| --+--> x_PID(t)
 |   |     +-----+     | (Caso)  |   |
 +-|-+                 +---------+   |
 ^ -                               |
 |                                 |
 +---------------------------------+
+
+```
+
 Utilizando la herramienta **Tune** de Simulink, se obtienen las ganancias optimizadas $k_P$, $k_I$ y $k_D$ para garantizar el seguimiento de la referencia con sobreimpulso mínimo y rápido tiempo de asentamiento.
 
 > *Nota: La estrategia de control desarrollada tiene propósitos exclusivamente académicos y de simulación in silico, y no constituye una recomendación terapéutica médica.*
@@ -289,8 +301,31 @@ flowchart TD
     L --> N[Verificación Cruzada de Resultados]
     N --> O[Documentación GitHub y CITATION.cff]
 
-Volver al contenidoActividades del estudiante[x] Identificación del modelo: Analizar la interacción de $C_p, C_s, R$ y la fuente activa $F_0(t)$.[x] Analogía electromecánica: Construir la red equivalente fuerza-voltaje respetando las transformaciones serie/paralelo.[x] Desarrollo matemático: Derivar $G(s)$ por superposición apagando alternadamente $F_0(t)$ y $F(t)$.[x] Análisis de estabilidad: Calcular polos, demostrar estabilidad asintótica y determinar $e_{ss} = \alpha$.[x] Simulación Simulink/Simscape: Implementar los modelos y comparar respuestas al impulso en $t \in [0, 10]\text{ s}$.[x] Sintonización PID: Diseñar el lazo cerrado y registrar las ganancias $k_P, k_I, k_D$.[x] Código Python: Reproducir las simulaciones y exportar las figuras correspondientes.[x] Diagrama BioRender: Relacionar el tendón, sarcolema y fibras musculares con $C_s, C_p, R$ y $F_0$.[x] Resguardo en GitHub: Publicar los código fuente, figuras PDF, README.md y CITATION.cff.Volver al contenido
-Estructura del repositorio
+```
+
+[Volver al contenido](https://www.google.com/search?q=%23contenido)
+
+---
+
+## Actividades del estudiante
+
+* [x] **Identificación del modelo:** Analizar la interacción de $C_p, C_s, R$ y la fuente activa $F_0(t)$.
+* [x] **Analogía electromecánica:** Construir la red equivalente fuerza-voltaje respetando las transformaciones serie/paralelo.
+* [x] **Desarrollo matemático:** Derivar $G(s)$ por superposición apagando alternadamente $F_0(t)$ y $F(t)$.
+* [x] **Análisis de estabilidad:** Calcular polos, demostrar estabilidad asintótica y determinar $e_{ss} = \alpha$.
+* [x] **Simulación Simulink/Simscape:** Implementar los modelos y comparar respuestas al impulso en $t \in [0, 10]\text{ s}$.
+* [x] **Sintonización PID:** Diseñar el lazo cerrado y registrar las ganancias $k_P, k_I, k_D$.
+* [x] **Código Python:** Reproducir las simulaciones y exportar las figuras correspondientes.
+* [x] **Diagrama BioRender:** Relacionar el tendón, sarcolema y fibras musculares con $C_s, C_p, R$ y $F_0$.
+* [x] **Resguardo en GitHub:** Publicar los código fuente, figuras PDF, `README.md` y `CITATION.cff`.
+
+[Volver al contenido](https://www.google.com/search?q=%23contenido)
+
+---
+
+## Estructura del repositorio
+
+```text
 .
 ├── README.md                  # Reporte principal de la práctica
 ├── CITATION.cff               # Fichero de citación del repositorio
@@ -303,29 +338,41 @@ Estructura del repositorio
 ├── impulse_python.pdf         # Gráfica lazo abierto Python
 ├── pid_matlab.pdf             # Gráfica lazo cerrado MATLAB
 └── pid_python.pdf             # Gráfica lazo cerrado Python
-Volver al contenido
 
-Requisitos
-Software
-MATLAB R2023b o superior con Simulink y Simscape Electrical.
+```
 
-Python 3.10+ con las librerías numpy, scipy y matplotlib.
+[Volver al contenido](https://www.google.com/search?q=%23contenido)
 
-Visual Studio Code para ejecución de scripts .py.
+---
 
-Volver al contenido
+## Requisitos
 
-Referencias
-[1] M. C. Khoo, Physiological Control Systems: Analysis, Simulation, and Estimation, 2nd ed. Piscataway, NJ, USA: IEEE Press, 2018.
+### Software
 
-[2] F. C. Hoppensteadt and C. S. Peskin, Modeling and Simulation in Medicine and the Life Sciences, 2nd ed. New York, NY, USA: Springer, 2002.
+* **MATLAB R2023b o superior** con Simulink y Simscape Electrical.
+* **Python 3.10+** con las librerías `numpy`, `scipy` y `matplotlib`.
+* **Visual Studio Code** para ejecución de scripts `.py`.
 
-[3] J. E. Hall, Guyton and Hall Textbook of Medical Physiology, 14th ed. Philadelphia, PA, USA: Elsevier, 2021.
+[Volver al contenido](https://www.google.com/search?q=%23contenido)
 
-[4] K. Ogata, Ingeniería de Control Moderna, 5a ed. Madrid, España: Pearson Educación, 2010.
+---
 
-[5] N. S. Nise, Control Systems Engineering, 8th ed. Hoboken, NJ, USA: John Wiley & Sons, 2020.
+## Referencias
 
-[6] P. A. Valle, Syllabus para Modelado de Sistemas Fisiológicos, Tecnológico Nacional de México / Instituto Tecnológico de Tijuana, Tijuana, B.C., México, 2026. Permalink: https://biomath.xyz/course/
+[1] M. C. Khoo, *Physiological Control Systems: Analysis, Simulation, and Estimation*, 2nd ed. Piscataway, NJ, USA: IEEE Press, 2018.
 
-[7] Tecnológico Nacional de México, Programa de estudio de la asignatura Modelado de Sistemas Fisiológicos, IBF-1020.
+[2] F. C. Hoppensteadt and C. S. Peskin, *Modeling and Simulation in Medicine and the Life Sciences*, 2nd ed. New York, NY, USA: Springer, 2002.
+
+[3] J. E. Hall, *Guyton and Hall Textbook of Medical Physiology*, 14th ed. Philadelphia, PA, USA: Elsevier, 2021.
+
+[4] K. Ogata, *Ingeniería de Control Moderna*, 5a ed. Madrid, España: Pearson Educación, 2010.
+
+[5] N. S. Nise, *Control Systems Engineering*, 8th ed. Hoboken, NJ, USA: John Wiley & Sons, 2020.
+
+[6] P. A. Valle, *Syllabus para Modelado de Sistemas Fisiológicos*, Tecnológico Nacional de México / Instituto Tecnológico de Tijuana, Tijuana, B.C., México, 2026. Permalink: https://biomath.xyz/course/
+
+[7] Tecnológico Nacional de México, *Programa de estudio de la asignatura Modelado de Sistemas Fisiológicos*, IBF-1020.
+
+```
+
+```
