@@ -268,30 +268,26 @@ Se realiza una verificación cruzada entre las 5 representaciones del sistema:
 
 [Volver al contenido](#contenido)
 
----
-
 <a id="flujo"></a>
 ## Flujo de trabajo
 
 ```mermaid
 flowchart TD
-    A[Modelo Mecanico Muscular] --> B[Analogia Fuerza-Voltaje]
-    B --> C[Circuito Electrónico Equivalente]
-    C --> D[Principio de Superposición]
-    D --> E[Función de Transferencia G(s)]
-    E --> F[Análisis de Polos y Error e_ss]
-    F --> G[Simulink: Funciones de Transferencia]
-    C --> H[Simscape Electrical: Red Física]
-    G --> I[Respuesta al Impulso: Control vs Caso]
+    A["Modelo Mecanico Muscular"] --> B["Analogia Fuerza-Voltaje"]
+    B --> C["Circuito Electrónico Equivalente"]
+    C --> D["Principio de Superposición"]
+    D --> E["Función de Transferencia G(s)"]
+    E --> F["Análisis de Polos y Error e_ss"]
+    F --> G["Simulink: Funciones de Transferencia"]
+    C --> H["Simscape Electrical: Red Física"]
+    G --> I["Respuesta al Impulso: Control vs Caso"]
     H --> I
-    E --> J[Diseño Control PID in silico]
-    J --> K[Sintonización con Tune en Simulink]
-    K --> L[Simulación Lazo Cerrado]
-    E --> M[Validación Independiente en Python]
-    L --> N[Verificación Cruzada de Resultados]
-    N --> O[Documentación GitHub y CITATION.cff]
-```
-
+    E --> J["Diseño Control PID in silico"]
+    J --> K["Sintonización con Tune en Simulink"]
+    K --> L["Simulación Lazo Cerrado"]
+    E --> M["Validación Independiente en Python"]
+    L --> N["Verificación Cruzada de Resultados"]
+    N --> O["Documentación GitHub y CITATION.cff"]
 [Volver al contenido](#contenido)
 
 ---
