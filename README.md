@@ -1,6 +1,6 @@
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=l23212228-hue/MSFP3)
 
-# Práctica 3 — Modelado y control del sistema musculoesquelético
+# Práctica 3: Modelado y control del sistema musculoesquelético
 
 Repositorio académico de la asignatura **Modelado de Sistemas Fisiológicos**, correspondiente al programa de **Ingeniería Biomédica** del Tecnológico Nacional de México / Instituto Tecnológico de Tijuana. En esta práctica se modela un compartimento musculoesquelético simplificado, se construye su circuito eléctrico equivalente mediante la analogía fuerza-voltaje, se obtiene su función de transferencia por el principio de superposición, y se evalúa la respuesta de un individuo sano (*control*) frente a un caso simulado de atrofia muscular (*caso*), diseñando una estrategia de control *in silico* mediante un controlador PID.
 
