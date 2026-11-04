@@ -268,6 +268,8 @@ Se realiza una verificación cruzada entre las 5 representaciones del sistema:
 
 [Volver al contenido](#contenido)
 
+---
+
 <a id="flujo"></a>
 ## Flujo de trabajo
 
