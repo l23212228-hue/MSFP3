@@ -101,7 +101,9 @@ La práctica integra contenidos correspondientes a tres unidades de la asignatur
 ## Modelo físico y analogía eléctrica
 
 El comportamiento viscoelástico del compartimento musculoesquelético se aproxima mediante un arreglo mecánico que posteriormente se transforma usando la **analogía fuerza-voltaje**. 
+
 ![Diagrama de BioRender](Biorender.jpeg)
+
 | Sistema mecánico | Sistema eléctrico equivalente | Interpretación fisiológica |
 |---|---|---|
 | Fuerza $F(t)$ | Voltaje $V(t)$ | Fuerza transmitida por el sistema |
