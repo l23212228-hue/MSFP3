@@ -215,21 +215,14 @@ Para compensar la respuesta alterada por la atrofia muscular, se implementa un s
 
 $$\text{Error: } e(t) = x_{\text{control}}(t) - x_{\text{caso}}(t)$$
 
-
 ```
-
-```
-           +---+     +-----+     +---------+
-
-```
-
-V_e(t) ----> | + | --> | PID | --> | Paciente| --+--> x_PID(t)
-|   |     +-----+     | (Caso)  |   |
-+-|-+                 +---------+   |
-^ -                               |
-|                                 |
-+---------------------------------+
-
+               +---+     +-----+     +---------+
+  V_e(t) ----> | + | --> | PID | --> | Paciente| --+--> x_PID(t)
+               |   |     +-----+     | (Caso)  |   |
+               +-|-+                 +---------+   |
+                 ^ -                               |
+                 |                                 |
+                 +---------------------------------+
 ```
 
 Utilizando la herramienta **Tune** de Simulink, se obtienen las ganancias optimizadas $k_P$, $k_I$ y $k_D$ para garantizar el seguimiento de la referencia con sobreimpulso mínimo y rápido tiempo de asentamiento.
@@ -297,29 +290,30 @@ flowchart TD
     E --> M[Validación Independiente en Python]
     L --> N[Verificación Cruzada de Resultados]
     N --> O[Documentación GitHub y CITATION.cff]
-
 ```
 
-[Volver al contenido](https://www.google.com/search?q=%23contenido)
+[Volver al contenido](#contenido)
 
 ---
 
+<a id="actividades"></a>
 ## Actividades del estudiante
 
-* [x] **Identificación del modelo:** Analizar la interacción de $C_p, C_s, R$ y la fuente activa $F_0(t)$.
-* [x] **Analogía electromecánica:** Construir la red equivalente fuerza-voltaje respetando las transformaciones serie/paralelo.
-* [x] **Desarrollo matemático:** Derivar $G(s)$ por superposición apagando alternadamente $F_0(t)$ y $F(t)$.
-* [x] **Análisis de estabilidad:** Calcular polos, demostrar estabilidad asintótica y determinar $e_{ss} = \alpha$.
-* [x] **Simulación Simulink/Simscape:** Implementar los modelos y comparar respuestas al impulso en $t \in [0, 10]\text{ s}$.
-* [x] **Sintonización PID:** Diseñar el lazo cerrado y registrar las ganancias $k_P, k_I, k_D$.
-* [x] **Código Python:** Reproducir las simulaciones y exportar las figuras correspondientes.
-* [x] **Diagrama BioRender:** Relacionar el tendón, sarcolema y fibras musculares con $C_s, C_p, R$ y $F_0$.
-* [x] **Resguardo en GitHub:** Publicar los código fuente, figuras PDF, `README.md` y `CITATION.cff`.
+- [x] **Identificación del modelo:** Analizar la interacción de $C_p, C_s, R$ y la fuente activa $F_0(t)$.
+- [x] **Analogía electromecánica:** Construir la red equivalente fuerza-voltaje respetando las transformaciones serie/paralelo.
+- [x] **Desarrollo matemático:** Derivar $G(s)$ por superposición apagando alternadamente $F_0(t)$ y $F(t)$.
+- [x] **Análisis de estabilidad:** Calcular polos, demostrar estabilidad asintótica y determinar $e_{ss} = \alpha$.
+- [x] **Simulación Simulink/Simscape:** Implementar los modelos y comparar respuestas al impulso en $t \in [0, 10]\text{ s}$.
+- [x] **Sintonización PID:** Diseñar el lazo cerrado y registrar las ganancias $k_P, k_I, k_D$.
+- [x] **Código Python:** Reproducir las simulaciones y exportar las figuras correspondientes.
+- [x] **Diagrama BioRender:** Relacionar el tendón, sarcolema y fibras musculares con $C_s, C_p, R$ y $F_0$.
+- [x] **Resguardo en GitHub:** Publicar los código fuente, figuras PDF, `README.md` y `CITATION.cff`.
 
-[Volver al contenido](https://www.google.com/search?q=%23contenido)
+[Volver al contenido](#contenido)
 
 ---
 
+<a id="estructura"></a>
 ## Estructura del repositorio
 
 ```text
@@ -335,25 +329,25 @@ flowchart TD
 ├── impulse_python.pdf         # Gráfica lazo abierto Python
 ├── pid_matlab.pdf             # Gráfica lazo cerrado MATLAB
 └── pid_python.pdf             # Gráfica lazo cerrado Python
-
 ```
 
-[Volver al contenido](https://www.google.com/search?q=%23contenido)
+[Volver al contenido](#contenido)
 
 ---
 
+<a id="requisitos"></a>
 ## Requisitos
 
 ### Software
+- **MATLAB R2023b o superior** con Simulink y Simscape Electrical.
+- **Python 3.10+** con las librerías `numpy`, `scipy` y `matplotlib`.
+- **Visual Studio Code** para ejecución de scripts `.py`.
 
-* **MATLAB R2023b o superior** con Simulink y Simscape Electrical.
-* **Python 3.10+** con las librerías `numpy`, `scipy` y `matplotlib`.
-* **Visual Studio Code** para ejecución de scripts `.py`.
-
-[Volver al contenido](https://www.google.com/search?q=%23contenido)
+[Volver al contenido](#contenido)
 
 ---
 
+<a id="referencias"></a>
 ## Referencias
 
 [1] M. C. Khoo, *Physiological Control Systems: Analysis, Simulation, and Estimation*, 2nd ed. Piscataway, NJ, USA: IEEE Press, 2018.
@@ -369,7 +363,3 @@ flowchart TD
 [6] P. A. Valle, *Syllabus para Modelado de Sistemas Fisiológicos*, Tecnológico Nacional de México / Instituto Tecnológico de Tijuana, Tijuana, B.C., México, 2026. Permalink: https://biomath.xyz/course/
 
 [7] Tecnológico Nacional de México, *Programa de estudio de la asignatura Modelado de Sistemas Fisiológicos*, IBF-1020.
-
-```
-
-```
