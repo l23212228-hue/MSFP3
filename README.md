@@ -4,16 +4,17 @@
 
 Repositorio académico de la asignatura **Modelado de Sistemas Fisiológicos**, correspondiente al programa de **Ingeniería Biomédica** del Tecnológico Nacional de México / Instituto Tecnológico de Tijuana. En esta práctica se modela un compartimento musculoesquelético simplificado, se construye su circuito eléctrico equivalente mediante la analogía fuerza-voltaje, se obtiene su función de transferencia por el principio de superposición, y se evalúa la respuesta de un individuo sano (*control*) frente a un caso simulado de atrofia muscular (*caso*), diseñando una estrategia de control *in silico* mediante un controlador PID.
 
+
 **Docente:** Dr. Paul Antonio Valle Trujillo  
 **Correo:** paul.valle@tectijuana.edu.mx  
-**Departamento:** Departamento de Ingeniería Eléctrica y Electrónica  
+**Departamento:** Ingeniería Eléctrica y Electrónica  
 **Institución:** Tecnológico Nacional de México / Instituto Tecnológico de Tijuana  
 **Asignatura:** Modelado de Sistemas Fisiológicos  
 **Programa:** Ingeniería Biomédica  
-**Estudiante:** Reyes Zamudio Mariant · 23212228 · l23212228@tectijuana.edu.mx  
+**Estudiante:** Nombre completo · Número de control · correo@tijuana.tecnm.mx
 
+**Repositorio de la asignatura:** https://github.com/DrPaulValle/MSF-IBF1020  
 **Sede:** Blvd. Alberto Limón Padilla s/n, Tijuana, C. P. 22454, B. C., México.
-
 ---
 
 <a id="contenido"></a>
